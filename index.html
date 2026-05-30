@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מארז חזרה לבגרות בהיסטוריה — לאומיות, הקמת המדינה וכור ההיתוך</title>
+<style>
+  :root{
+    --c2:#1565c0; --c2bg:#e3f0fc;
+    --c3:#2e7d32; --c3bg:#e6f4e7;
+    --c4:#b8860b; --c4bg:#fbf3df;
+    --ink:#1f2733; --muted:#5b6573; --line:#dfe4ea; --bg:#f6f8fb;
+    --tip:#7b1fa2; --tipbg:#f4e9f8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI","Arial Hebrew",Arial,sans-serif;background:var(--bg);
+    color:var(--ink);line-height:1.7;font-size:18px}
+  header{background:linear-gradient(135deg,#0d3b66,#1565c0);color:#fff;padding:30px 18px 26px;text-align:center}
+  header h1{margin:0 0 6px;font-size:1.7rem}
+  header .sub{opacity:.92;font-size:1.02rem}
+  .badge{display:inline-block;background:#ffd166;color:#5a3d00;font-weight:700;border-radius:20px;
+    padding:5px 16px;margin-top:12px;font-size:.95rem}
+  main{max-width:860px;margin:0 auto;padding:18px 16px 70px}
+  nav{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:18px 0;
+    box-shadow:0 1px 3px rgba(0,0,0,.05)}
+  nav b{display:block;margin-bottom:8px;color:var(--muted);font-size:.9rem}
+  nav a{display:inline-block;margin:4px 4px;padding:7px 13px;border-radius:9px;text-decoration:none;
+    font-weight:600;font-size:.95rem}
+  nav .n2{background:var(--c2bg);color:var(--c2)} nav .n3{background:var(--c3bg);color:var(--c3)}
+  nav .n4{background:var(--c4bg);color:var(--c4)} nav .nx{background:var(--tipbg);color:var(--tip)}
+  section{background:#fff;border-radius:16px;padding:20px 20px 8px;margin:20px 0;border:1px solid var(--line);
+    box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .ch{border-top:6px solid}
+  #ch2{border-color:var(--c2)} #ch3{border-color:var(--c3)} #ch4{border-color:var(--c4)}
+  h2{font-size:1.4rem;margin:.2em 0 .5em;display:flex;align-items:center;gap:10px}
+  #ch2 h2{color:var(--c2)} #ch3 h2{color:var(--c3)} #ch4 h2{color:var(--c4)}
+  h3{font-size:1.15rem;margin:1.1em 0 .3em;border-bottom:2px dashed var(--line);padding-bottom:4px}
+  .chip{font-size:.78rem;font-weight:700;border-radius:20px;padding:3px 11px;color:#fff}
+  #ch2 .chip{background:var(--c2)} #ch3 .chip{background:var(--c3)} #ch4 .chip{background:var(--c4)}
+  ul{margin:.3em 0 .8em;padding-inline-start:22px}
+  li{margin:.28em 0}
+  .key{background:#fff8e1;border:1px solid #ffe082;border-radius:10px;padding:6px 12px;display:inline-block;margin:2px 0}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.96rem}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:right}
+  th{background:#f0f4f8}
+  .mnem{background:var(--tipbg);border:1px solid #e1bee7;border-radius:12px;padding:12px 16px;margin:12px 0}
+  .mnem b{color:var(--tip)}
+  .fig{background:#fbfcfe;border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0;text-align:center}
+  .fig figcaption{color:var(--muted);font-size:.9rem;margin-top:6px}
+  details{background:#fcfdff;border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:0 14px;overflow:hidden}
+  details[open]{box-shadow:0 1px 6px rgba(0,0,0,.06)}
+  summary{cursor:pointer;font-weight:700;padding:13px 4px;list-style:none;display:flex;gap:8px;align-items:flex-start}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"שאלה";font-size:.72rem;background:#eef2f7;color:var(--muted);
+    border-radius:6px;padding:3px 7px;flex:none;margin-top:2px}
+  .ans{border-top:1px dashed var(--line);padding:10px 2px 14px;margin-top:4px}
+  .ans b{color:#0d3b66}
+  .freq{font-size:.74rem;font-weight:700;border-radius:6px;padding:2px 8px;margin-inline-start:auto;flex:none}
+  .hi{background:#ffe0e0;color:#c0392b} .mid{background:#fff3cd;color:#8a6d00}
+  .verbs td:first-child{font-weight:700;white-space:nowrap}
+  .tip section{background:none}
+  .callout{background:var(--c4bg);border:1px solid #f0d98a;border-radius:12px;padding:12px 16px;margin:14px 0}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;padding:26px 16px 50px}
+  .top{display:block;text-align:center;margin:8px 0;color:var(--muted);text-decoration:none;font-size:.85rem}
+  svg text{font-family:"Segoe UI","Arial Hebrew",Arial,sans-serif}
+</style>
+</head>
+<body>
+<header>
+  <h1>מארז חזרה לבגרות בהיסטוריה</h1>
+  <div class="sub">לאומיות וציונות · המאבק על הקמת המדינה · עלייה, קליטה וכור ההיתוך</div>
+  <div class="badge">📅 הבחינה: יום שני, ה׳ סיוון, 1 ביוני 2026</div>
+</header>
+
+<main>
+  <div class="callout">
+    <b>היקף החומר (לפי דפי המורה):</b> שלושת הפרקים שלהלן בלבד.
+    <b>לא נכלל:</b> השואה ומלחמת העולם השנייה, מלחמת ששת הימים ומלחמת יום הכיפורים.
+    <br><b>איך עונים:</b> בכל שאלה — שימו לב לפועל: <span class="key">הציגו</span> = עובדה קצרה ·
+    <span class="key">הסבירו</span> = סיבה + פיתוח · <span class="key">בססו על המקור</span> = ציטוט/הפניה לקטע.
+  </div>
+
+  <div class="callout" style="background:#ffe9e9;border-color:#f3b0b0">
+    <b style="color:#c0392b">🎯 על מה להתמקד הכי הרבה (לפי סדר עדיפות):</b>
+    <ol style="margin:8px 0 0;padding-inline-start:22px">
+      <li><b>פרק 4 — עלייה, קליטה וכור ההיתוך</b> — <b>עדיפות #1</b>. המורה חילקה על כך סיכום מפורט = כמעט ודאי שתופיע שאלה. שלוט בעל-פה. <span class="key">≈ 33 נק' "בטוחות"</span></li>
+      <li><b>פרק 3 — הקמת המדינה</b> — עדיפות #2. נרטיב ברור (החלוקה → המלחמה) שקל לזכור.</li>
+      <li><b>פרק 2 — לאומיות וציונות</b> — גיבוי. אם נבחרים 2 מתוך 3 פרקים — זה הפרק שאפשר לוותר עליו אם הזמן קצר.</li>
+    </ol>
+    <span style="font-size:.9rem;color:var(--muted)">המינימום ללמוד היטב: <b>פרק 4 + פרק 3</b>. את פרק 2 לשמור "חם" כגיבוי.</span>
+  </div>
+
+  <nav>
+    <b>ניווט מהיר</b>
+    <a class="n2" href="#ch2">פרק 2 · לאומיות וציונות</a>
+    <a class="n3" href="#ch3">פרק 3 · הקמת המדינה</a>
+    <a class="n4" href="#ch4">פרק 4 · עלייה וכור ההיתוך</a>
+    <a class="nx" href="#exam">טכניקת מענה</a>
+    <a class="nx" href="#check">צ׳ק־ליסט אחרון</a>
+  </nav>
+
+  <!-- ============ CHAPTER 2 ============ -->
+  <section id="ch2" class="ch">
+    <h2>🏛️ פרק 2 — לאומיות וציונות</h2>
+
+    <h3>מהי לאומיות? <span class="chip">מושג יסוד</span></h3>
+    <ul>
+      <li><b>לאומיות מודרנית</b> – תודעה של קבוצת אנשים שיש להם מכנה משותף (שפה, היסטוריה, תרבות, מוצא),
+      הרואים עצמם כ<b>אומה</b> וזכאים ל<b>הגדרה עצמית</b> (מדינה משלהם).</li>
+      <li><b>הציונות</b> – תנועת הלאומיות של העם היהודי: הקמת בית לאומי לעם היהודי בארץ-ישראל.</li>
+    </ul>
+
+    <h3>הגורמים לצמיחת הלאומיות באירופה <span class="chip">שאלה חוזרת מאוד</span></h3>
+    <figure class="fig">
+      <svg viewBox="0 0 720 260" width="100%" style="max-width:680px" role="img" aria-label="גורמים לצמיחת הלאומיות">
+        <rect x="280" y="105" width="160" height="52" rx="12" fill="#1565c0"/>
+        <text x="360" y="131" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">לאומיות</text>
+        <text x="360" y="149" fill="#fff" font-size="13" text-anchor="middle">מודרנית</text>
+        <!-- four source boxes -->
+        <g font-size="13.5" text-anchor="middle">
+          <rect x="20"  y="20"  width="180" height="46" rx="9" fill="#e3f0fc" stroke="#90caf9"/>
+          <text x="110" y="40">רעיונות ההשכלה</text><text x="110" y="58" font-size="11.5" fill="#5b6573">(שוויון, חירות, ריבונות העם)</text>
+          <rect x="520" y="20"  width="180" height="46" rx="9" fill="#e3f0fc" stroke="#90caf9"/>
+          <text x="610" y="40">התנועה הרומנטית</text><text x="610" y="58" font-size="11.5" fill="#5b6573">(הערצת המקור, השפה, העבר)</text>
+          <rect x="20"  y="196" width="180" height="46" rx="9" fill="#e3f0fc" stroke="#90caf9"/>
+          <text x="110" y="216">המהפכה הצרפתית</text><text x="110" y="234" font-size="11.5" fill="#5b6573">וכיבושי נפוליאון</text>
+          <rect x="520" y="196" width="180" height="46" rx="9" fill="#e3f0fc" stroke="#90caf9"/>
+          <text x="610" y="216">המהפכה התעשייתית</text><text x="610" y="234" font-size="11.5" fill="#5b6573">(עיור, עיתונות, רכבת)</text>
+        </g>
+        <g stroke="#1565c0" stroke-width="2" fill="none" marker-end="url(#ar2)">
+          <path d="M200,46 C250,70 250,100 285,118"/>
+          <path d="M520,46 C470,70 470,100 435,118"/>
+          <path d="M200,216 C250,192 250,160 285,144"/>
+          <path d="M520,216 C470,192 470,160 435,144"/>
+        </g>
+        <defs><marker id="ar2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+          <path d="M0,0 L7,3 L0,6 Z" fill="#1565c0"/></marker></defs>
+      </svg>
+      <figcaption>ארבעת הגורמים המרכזיים לצמיחת הלאומיות — לזכור לפי הראשי־תיבות שלמטה</figcaption>
+    </figure>
+    <div class="mnem"><b>טריק זיכרון: "השכלה רומנטית מהפכנית תעשייתית" → ה־ר־מ־ת</b><br>
+      <b>ה</b>שכלה · <b>ר</b>ומנטיקה · <b>מ</b>הפכה צרפתית · <b>ת</b>עשייה.
+      <br>הסבר מהיר: ההשכלה נתנה את הרעיון (העם ריבון) · הרומנטיקה נתנה את הרגש (גאווה בשפה ובעבר) ·
+      המהפכה הצרפתית הראתה דוגמה מעשית · התעשייה יצרה את התנאים (ערים, עיתונות, תחבורה).
+    </div>
+
+    <h3>מאפיינים ודרכי פעולה של התנועות הלאומיות</h3>
+    <ul>
+      <li><b>מאפיינים:</b> מנהיג כריזמטי · אידאולוגיה/רעיון מגבש · סמלים לאומיים (דגל, המנון) · עיתונות ושפה משותפת · ארגון/קונגרס.</li>
+      <li><b>דרכי פעולה:</b> הקמת מסגרת מאחדת (קונגרס) · גיוס תמיכת מעצמות · התיישבות · חינוך והפצת השפה · מאבק מדיני/צבאי.</li>
+    </ul>
+
+    <h3>הציונות: הרצל ותוכנית בזל (1897)</h3>
+    <ul>
+      <li><b>תאודור הרצל</b> – מייסד הציונות המדינית; כינס את <b>הקונגרס הציוני הראשון בבזל (1897)</b>.</li>
+      <li><b>תוכנית בזל</b> – המטרה: "בית לאומי לעם היהודי בארץ-ישראל מובטח במשפט הציבורי". אמצעים: התיישבות, ארגון יהדות העולם, חיזוק הרגש הלאומי, פעולה דיפלומטית להשגת הסכמת המעצמות.</li>
+    </ul>
+
+    <h3>הצהרת בלפור (2 בנובמבר 1917) <span class="chip">כמעט בכל שנה</span></h3>
+    <ul>
+      <li><b>מה זה:</b> מכתב של שר החוץ הבריטי בלפור, שבו <b>בריטניה</b> מביעה תמיכה בהקמת
+      "<b>בית לאומי לעם היהודי</b>" בארץ-ישראל.</li>
+      <li><b>כיצד קידמה את הציונות:</b> (1) הכרה בין-לאומית ראשונה של מעצמה בזכות היהודים על הארץ;
+      (2) בסיס משפטי שנכלל אחר כך ב<b>כתב המנדט</b> (1922); (3) חיזוק מעמד התנועה הציונית ועידוד עלייה והתיישבות.</li>
+    </ul>
+
+    <h3>שאלות סבירות + תשובות לדוגמה</h3>
+    <details><summary>הסבירו שניים מן הגורמים לצמיחת הלאומיות באירופה במאה ה־19. <span class="freq hi">חוזרת מאוד</span></summary>
+      <div class="ans"><b>תשובה:</b>
+      <br><b>1. רעיונות ההשכלה</b> — הוגי ההשכלה הדגישו ש<b>העם הוא הריבון</b> (ולא המלך), ושלכל אדם זכות לחירות ולשוויון.
+      רעיונות אלה הולידו את התביעה שכל אומה תנהל את עצמה במסגרת מדינה משלה — בסיס לרעיון הלאומי.
+      <br><b>2. התנועה הרומנטית</b> — הרומנטיקה העריצה את ה<b>ייחוד</b> של כל עם: שפתו, עברו ההיסטורי, הפולקלור והמסורת.
+      כך התחזקה הגאווה הלאומית והרצון של כל עם לשמר את זהותו ולהקים מדינה לאומית.
+      <br><i>(אפשר גם: המהפכה הצרפתית וכיבושי נפוליאון שהפיצו את רעיון הריבונות; המהפכה התעשייתית שיצרה ערים, עיתונות ותחבורה שאיחדו את האומה.)</i></div>
+    </details>
+    <details><summary>הציגו את עיקרי הצהרת בלפור והסבירו כיצד קידמה את מטרות התנועה הציונית. <span class="freq hi">חוזרת מאוד</span></summary>
+      <div class="ans"><b>תשובה:</b>
+      <br><b>עיקרי ההצהרה:</b> ב־2.11.1917 הצהירה ממשלת בריטניה כי היא רואה בעין יפה הקמת <b>בית לאומי לעם היהודי</b>
+      בארץ-ישראל, ותשתדל לסייע להשגת מטרה זו (תוך שמירה על זכויות הקהילות הלא-יהודיות).
+      <br><b>כיצד קידמה את הציונות:</b> זו הייתה <b>ההכרה הבין-לאומית הראשונה</b> של מעצמה גדולה בזכות העם היהודי על הארץ;
+      היא העניקה לתנועה הציונית <b>לגיטימציה ומעמד מדיני</b>; ועיקריה שולבו ב<b>כתב המנדט</b> שאישרה חבר הלאומים (1922) —
+      וכך הפכו לבסיס חוקי לעלייה ולהתיישבות.</div>
+    </details>
+    <details><summary>הציגו שני שינויים שחוללה הלאומיות במפה המדינית של אירופה בסוף המאה ה־19 ותחילת ה־20. <span class="freq mid">חוזרת</span></summary>
+      <div class="ans"><b>תשובה:</b>
+      <br><b>1. איחוד מדינות מפוצלות</b> — עמים שהיו מפוצלים לנסיכויות התאחדו למדינות לאום (למשל <b>איחוד איטליה</b> ו<b>איחוד גרמניה</b>).
+      <br><b>2. פירוק אימפריות רב-לאומיות</b> — עמים ששאפו לעצמאות פרשו מאימפריות גדולות (כמו האימפריה העות'מאנית והאוסטרו-הונגרית) והקימו מדינות לאום חדשות.</div>
+    </details>
+    <a class="top" href="#">↑ חזרה לראש העמוד</a>
+  </section>
+
+  <!-- ============ CHAPTER 3 ============ -->
+  <section id="ch3" class="ch">
+    <h2>🗳️ פרק 3 — המאבק על הקמת מדינת ישראל</h2>
+
+    <h3>ציר זמן 1945–1949 <span class="chip">תמונת על</span></h3>
+    <figure class="fig">
+      <svg viewBox="0 0 720 170" width="100%" style="max-width:700px" role="img" aria-label="ציר זמן 1945-1949">
+        <line x1="40" y1="90" x2="690" y2="90" stroke="#2e7d32" stroke-width="3"/>
+        <g text-anchor="middle" font-size="12.5">
+          <!-- nodes -->
+          <circle cx="80"  cy="90" r="7" fill="#2e7d32"/><text x="80"  y="120">1945</text><text x="80"  y="62" font-size="11">תום מלה"ע<tspan x="80" dy="13">תנועת המרי</tspan></text>
+          <circle cx="240" cy="90" r="7" fill="#2e7d32"/><text x="240" y="120">1945–47</text><text x="240" y="62" font-size="11">העפלה ומאבק<tspan x="240" dy="13">בבריטים</tspan></text>
+          <circle cx="430" cy="90" r="7" fill="#c0392b"/><text x="430" y="120">כ"ט בנוב' 1947</text><text x="430" y="62" font-size="11">החלטת החלוקה<tspan x="430" dy="13">באו"ם</tspan></text>
+          <circle cx="560" cy="90" r="7" fill="#c0392b"/><text x="560" y="120">14.5.1948</text><text x="560" y="62" font-size="11">הכרזת<tspan x="560" dy="13">העצמאות</tspan></text>
+          <circle cx="660" cy="90" r="7" fill="#2e7d32"/><text x="660" y="120">1949</text><text x="660" y="62" font-size="11">סיום<tspan x="660" dy="13">המלחמה</tspan></text>
+        </g>
+      </svg>
+      <figcaption>מתום מלחמת העולם — דרך החלוקה וההכרזה — ועד סיום מלחמת העצמאות</figcaption>
+    </figure>
+
+    <h3>המאבק במדיניות בריטניה (1945–1947)</h3>
+    <p>אחרי מלחמת העולם השנייה בריטניה המשיכה במדיניות <b>"הספר הלבן"</b> שהגבילה עלייה והתיישבות. היישוב נאבק בשלושה אפיקים:</p>
+    <ul>
+      <li><b>מאבק צבאי</b> — "<b>תנועת המרי העברי</b>" (הגנה, אצ"ל, לח"י): פיצוץ גשרים, פעולות נגד מתקנים בריטיים.</li>
+      <li><b>העפלה</b> — עלייה בלתי-לגאלית בים: בין 1945 ל-1948 ניסו לעלות כ-<b>84,000 מעפילים</b> (פרשת "אקסודוס").</li>
+      <li><b>התיישבות</b> — הקמת יישובים חדשים (למשל מבצע "11 הנקודות בנגב") כדי לקבוע עובדות בשטח.</li>
+    </ul>
+    <div class="mnem"><b>שלוש דרכי המאבק — "מע"ה":</b> <b>מ</b>אבק צבאי · <b>ע</b>העפלה · <b>ה</b>תיישבות.<br>
+      המטרה המשותפת: להכשיל את שלטון המנדט ולהביא לסיומו → העברת השאלה לאו"ם.</div>
+
+    <h3>תוכנית החלוקה — כ"ט בנובמבר 1947 <span class="chip">שאלה חוזרת מאוד</span></h3>
+    <figure class="fig">
+      <svg viewBox="0 0 360 300" width="100%" style="max-width:330px" role="img" aria-label="מפת תוכנית החלוקה">
+        <rect x="0" y="0" width="360" height="300" fill="#eaf3fb"/>
+        <!-- schematic country -->
+        <path d="M150,10 L185,10 L180,70 L210,120 L195,175 L235,250 L210,290 L150,290 L145,235 L120,180 L150,120 L140,70 Z"
+              fill="#fff" stroke="#888"/>
+        <!-- Jewish areas -->
+        <path d="M150,10 L185,10 L180,70 L150,70 Z" fill="#3a7bd5"/>
+        <path d="M150,120 L195,120 L180,175 L150,175 Z" fill="#3a7bd5"/>
+        <path d="M195,175 L235,250 L210,290 L175,250 Z" fill="#3a7bd5"/>
+        <!-- Arab areas -->
+        <path d="M150,70 L180,70 L150,120 L140,70 Z" fill="#7cb342"/>
+        <path d="M120,180 L150,175 L150,235 L150,290 L150,290 L120,235 Z" fill="#7cb342"/>
+        <path d="M195,120 L210,120 L195,175 Z" fill="#7cb342"/>
+        <!-- Jerusalem -->
+        <circle cx="158" cy="200" r="13" fill="#e0a800" stroke="#7a5c00"/>
+        <text x="158" y="204" font-size="10" text-anchor="middle" fill="#3a2a00">י-ם</text>
+        <!-- legend -->
+        <g font-size="12">
+          <rect x="250" y="30" width="16" height="16" fill="#3a7bd5"/><text x="244" y="43" text-anchor="end">מדינה יהודית</text>
+          <rect x="250" y="58" width="16" height="16" fill="#7cb342"/><text x="244" y="71" text-anchor="end">מדינה ערבית</text>
+          <rect x="250" y="86" width="16" height="16" fill="#e0a800"/><text x="244" y="99" text-anchor="end">ירושלים בין-לאומית</text>
+        </g>
+      </svg>
+      <figcaption>סכמה של החלוקה: שתי מדינות + ירושלים תחת פיקוח בין-לאומי</figcaption>
+    </figure>
+    <ul>
+      <li><b>הסעיפים העיקריים:</b> (1) הקמת <b>מדינה יהודית</b>; (2) הקמת <b>מדינה ערבית</b>;
+      (3) <b>ירושלים</b> – אזור בין-לאומי בפיקוח האו"ם; (4) קשר כלכלי בין שתי המדינות.</li>
+      <li><b>מדוע ארה"ב וברה"מ תמכו:</b> ארה"ב — לחץ דעת קהל ורגישות אחרי השואה; ברה"מ — רצון <b>להוציא את בריטניה מהמזרח התיכון</b> ולהגביר את השפעתה.</li>
+      <li><b>התגובות:</b> ההנהגה הציונית <b>קיבלה</b> בשמחה (הגשמת חזון המדינה); <b>"הוועד הערבי העליון" דחה</b> וסירב לכל חלוקה — ופרצה מלחמה.</li>
+    </ul>
+
+    <h3>מלחמת העצמאות — שני שלבים</h3>
+    <figure class="fig">
+      <svg viewBox="0 0 700 150" width="100%" style="max-width:680px" role="img" aria-label="שני שלבי מלחמת העצמאות">
+        <rect x="30" y="35" width="300" height="80" rx="12" fill="#e6f4e7" stroke="#81c784"/>
+        <text x="180" y="60" text-anchor="middle" font-size="14" font-weight="700" fill="#2e7d32">שלב א׳ (מגננה)</text>
+        <text x="180" y="83" text-anchor="middle" font-size="12">30.11.1947 → 14.5.1948</text>
+        <text x="180" y="102" text-anchor="middle" font-size="11.5" fill="#5b6573">מול ערביי הארץ · קשיים קשים</text>
+        <rect x="370" y="35" width="300" height="80" rx="12" fill="#e6f4e7" stroke="#81c784"/>
+        <text x="520" y="60" text-anchor="middle" font-size="14" font-weight="700" fill="#2e7d32">שלב ב׳ (מתקפה)</text>
+        <text x="520" y="83" text-anchor="middle" font-size="12">15.5.1948 → 1949</text>
+        <text x="520" y="102" text-anchor="middle" font-size="11.5" fill="#5b6573">פלישת צבאות ערב · צה"ל עובר להתקפה</text>
+        <path d="M370,75 L335,75" stroke="#2e7d32" stroke-width="3" marker-end="url(#ar3)"/>
+        <defs><marker id="ar3" markerWidth="10" markerHeight="10" refX="2" refY="3" orient="auto">
+          <path d="M7,0 L0,3 L7,6 Z" fill="#2e7d32"/></marker></defs>
+      </svg>
+    </figure>
+    <ul>
+      <li><b>שלב א׳ (מגננה):</b> מול ערביי הארץ. קשיים: בידוד יישובים, מצור על ירושלים, מיעוט נשק, היעדר צבא סדיר.</li>
+      <li><b>הקמת צה"ל</b> (מאי 1948): איחוד הארגונים לצבא אחד — חיוני למעבר ממגננה למתקפה ולניצחון.</li>
+      <li><b>שלב ב׳ (מתקפה):</b> אחרי ההכרזה פלשו צבאות ערב; צה"ל בלם ועבר למתקפה. המלחמה הסתיימה ב<b>הסכמי שביתת נשק (1949)</b>.</li>
+      <li><b>בעיית הפליטים הפלסטינים:</b> נוצרה עקב בריחה ומגירוש בזמן המלחמה; גורמים — מהלכי הקרבות, קריאות מנהיגים ערבים לעזוב, פחד, וגם פעולות צבאיות.</li>
+    </ul>
+
+    <h3>שאלות סבירות + תשובות לדוגמה</h3>
+    <details><summary>הציגו שלושה מן הקשיים של היישוב היהודי בשלב הראשון של מלחמת העצמאות. <span class="freq hi">חוזרת מאוד</span></summary>
+      <div class="ans"><b>תשובה (שלושה קשיים):</b>
+      <br><b>1.</b> <b>נחיתות בנשק ובכוח אדם</b> — ליישוב לא היה צבא סדיר ולא נשק כבד, מול כוחות ערביים מאומנים.
+      <br><b>2.</b> <b>יישובים מבודדים ודרכים חסומות</b> — קשה היה להגן על יישובים מרוחקים ועל השיירות; <b>ירושלים הייתה במצור</b>.
+      <br><b>3.</b> <b>המשך השלטון הבריטי</b> עד מאי 1948 — הבריטים הקשו על התארגנות הצבאית ועל הכנסת נשק ועולים.</div>
+    </details>
+    <details><summary>הציגו שלושה סעיפים עיקריים בתוכנית החלוקה, והסבירו את תגובת היהודים והערבים. <span class="freq hi">חוזרת מאוד</span></summary>
+      <div class="ans"><b>תשובה:</b>
+      <br><b>סעיפים:</b> (1) הקמת מדינה יהודית; (2) הקמת מדינה ערבית; (3) ירושלים כאזור בין-לאומי בפיקוח האו"ם.
+      <br><b>תגובת היהודים:</b> ההנהגה הציונית <b>קיבלה</b> את התוכנית בשמחה — היא הגשימה את החזון של מדינה יהודית עצמאית, גם אם בשטח מצומצם.
+      <br><b>תגובת הערבים:</b> "הוועד הערבי העליון" <b>דחה</b> נחרצות כל חלוקה של הארץ, ופתח במאבק אלים שהתפתח למלחמה.</div>
+    </details>
+    <details><summary>הסבירו את החשיבות של הקמת צה"ל במהלך מלחמת העצמאות. <span class="freq mid">חוזרת</span></summary>
+      <div class="ans"><b>תשובה:</b> עד מאי 1948 פעלו ארגונים נפרדים (הגנה, אצ"ל, לח"י). <b>איחודם לצבא לאומי אחד (צה"ל)</b>
+      יצר פיקוד מרכזי אחיד, מנע אנרכיה ופילוג, ואיפשר תכנון אסטרטגי ומעבר מ<b>מגננה</b> ל<b>מתקפה</b> מתואמת —
+      תנאי הכרחי לבלימת צבאות ערב ולניצחון במלחמה.</div>
+    </details>
+    <a class="top" href="#">↑ חזרה לראש העמוד</a>
+  </section>
+
+  <!-- ============ CHAPTER 4 ============ -->
+  <section id="ch4" class="ch">
+    <h2>👥 פרק 4 — עלייה, קליטה וכור ההיתוך <span class="chip">נושא בעדיפות עליונה</span></h2>
+    <div class="callout">המורה חילקה סיכום מפורט דווקא על הנושא הזה — סימן ברור שזו <b>שאלה כמעט ודאית</b> (≈33 נק' "בטוחות"). שלטו בו היטב.</div>
+
+    <div class="callout" style="background:#fffdf5;border-color:#e6d27a">
+      <b>📋 סיכום המורה — הגרסה המלאה (ללמוד בעל-פה):</b>
+      <ol style="margin:8px 0 0;padding-inline-start:22px">
+        <li><b>העלייה ההמונית:</b> ביטול הגבלות הבריטים → כ-<b>700,000 עולים ב-3 שנים (1948–1951)</b>; האוכלוסייה היהודית (כ-650,000) <b>הוכפלה</b>. מקורות: ניצולי שואה (פולין ~106 אלף, רומניה ~118 אלף) + יהודי ארצות האסלאם.</li>
+        <li><b>מבצעי העלייה:</b> "<b>על כנפי נשרים</b>" (מרבד הקסמים) — ~50 אלף מ<b>תימן</b>; "<b>עזרא ונחמיה</b>" — ~123 אלף מ<b>עיראק</b>. עולי תימן עברו <b>מסעות רגליים מפרכים למחנות המעבר בעדן</b> (צפיפות ותנאים קשים) עד להטסתם.</li>
+        <li><b>"כור ההיתוך":</b> ההנהגה חששה מ"בליל של קבוצות" → מדיניות מיזוג גלויות לעיצוב דמות אחת — ה<b>"צבר"</b> (צעיר, חלוץ, עובד אדמה, לוחם, דובר עברית). <b>שלילת הגלות:</b> זניחת שפות ומסורות "גלותיות". בן-גוריון ראה ב<b>חינוך</b> כלי ל"זיקוק" העולה.</li>
+        <li><b>צה"ל ככלי שילוב:</b> חינוך לעברית ולערכי המדינה; רבים נדרשו <b>לעבר את שמותיהם</b> (פרטי ומשפחה) כדי למחוק זהות קודמת.</li>
+        <li><b>"החינוך האחיד" והמשבר:</b> במעברות נכפה חינוך אחיד שנטה לחילוניות (בעוד בשאר הארץ ההורים בחרו זרם). נוצר <b>נתק בין הילדים להורים המסורתיים</b>, בעיקר אצל עולי תימן וארצות האסלאם.</li>
+        <li><b>התנגדות עולי תימן:</b> תלונות על כפייה חילונית — מניעת לימוד תורה אצל ה"מורי" המסורתי, ואף <b>גזיזת פאות</b> לילדים; לחץ על הורים דרך איומים על תעסוקה ודיור.</li>
+        <li><b>ועדת פרומקין (1950):</b> ועדת חקירה שמצאה <b>"טעויות קשות" והפרעה שיטתית ללימודי דת</b>. בעקבותיה — האחריות לחינוך עברה לגוף ממשלתי שיאפשר <b>בחירה בין חינוך דתי לחילוני</b>.</li>
+        <li><b>עדות מן השטח (מעברת "חאלסה"):</b> מורה תיאר כיצד ניסו להחליף את מסורת ילדי תימן בערכי "תנועת נוער" (מכנסי חאקי וחולצה לבנה), תוך התעלמות מעושרם התרבותי — "טיפשות חינוכית".</li>
+        <li><b>סיכום:</b> כור ההיתוך היה דומיננטי בשנים הראשונות וראה בגיוון התרבותי <b>איום על הלכידות הלאומית</b>; בהדרגה (שנות ה-70 וה-90) השתנתה הגישה כלפי גלי עלייה מאוחרים.</li>
+      </ol>
+    </div>
+
+    <h3>העלייה ההמונית (1948–1951)</h3>
+    <figure class="fig">
+      <svg viewBox="0 0 560 220" width="100%" style="max-width:520px" role="img" aria-label="הכפלת האוכלוסייה">
+        <line x1="70" y1="180" x2="540" y2="180" stroke="#999"/>
+        <rect x="120" y="100" width="90" height="80" fill="#c9a227"/>
+        <text x="165" y="195" text-anchor="middle" font-size="13">1948</text>
+        <text x="165" y="92"  text-anchor="middle" font-size="13" font-weight="700">~650 אלף</text>
+        <rect x="330" y="20" width="90" height="160" fill="#b8860b"/>
+        <text x="375" y="195" text-anchor="middle" font-size="13">1951</text>
+        <text x="375" y="12"  text-anchor="middle" font-size="13" font-weight="700">~1.3 מיליון</text>
+        <path d="M225,140 C275,150 285,120 320,100" stroke="#b8860b" stroke-width="3" fill="none" marker-end="url(#ar4)"/>
+        <text x="285" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#8a6508">×2 בתוך 3 שנים!</text>
+        <defs><marker id="ar4" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+          <path d="M0,0 L7,3 L0,6 Z" fill="#b8860b"/></marker></defs>
+      </svg>
+      <figcaption>כ-700,000 עולים ב-3 שנים — האוכלוסייה היהודית הוכפלה</figcaption>
+    </figure>
+    <ul>
+      <li>עם הקמת המדינה <b>בוטלו הגבלות העלייה הבריטיות</b> → גל עלייה חסר תקדים ("העלייה ההמונית").</li>
+      <li><b>שני מקורות עיקריים:</b> ניצולי שואה מאירופה (פולין ~106 אלף, רומניה ~118 אלף) ויהודים מ<b>ארצות האסלאם</b>.</li>
+    </ul>
+
+    <h3>מבצעי העלייה מארצות האסלאם</h3>
+    <figure class="fig">
+      <svg viewBox="0 0 600 200" width="100%" style="max-width:560px" role="img" aria-label="מבצעי העלייה">
+        <rect x="250" y="78" width="110" height="44" rx="10" fill="#b8860b"/>
+        <text x="305" y="105" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">ישראל</text>
+        <rect x="20" y="20" width="170" height="48" rx="9" fill="#fbf3df" stroke="#e0c060"/>
+        <text x="105" y="40" text-anchor="middle" font-size="13" font-weight="700">תימן</text>
+        <text x="105" y="58" text-anchor="middle" font-size="11.5">"על כנפי נשרים" · ~50 אלף</text>
+        <rect x="20" y="132" width="170" height="48" rx="9" fill="#fbf3df" stroke="#e0c060"/>
+        <text x="105" y="152" text-anchor="middle" font-size="13" font-weight="700">עיראק</text>
+        <text x="105" y="170" text-anchor="middle" font-size="11.5">"עזרא ונחמיה" · ~123 אלף</text>
+        <g stroke="#b8860b" stroke-width="2.5" fill="none" marker-end="url(#ar5)">
+          <path d="M190,44 C235,55 235,75 252,90"/>
+          <path d="M190,156 C235,145 235,120 252,110"/>
+        </g>
+        <defs><marker id="ar5" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+          <path d="M0,0 L7,3 L0,6 Z" fill="#b8860b"/></marker></defs>
+      </svg>
+      <figcaption>שני המבצעים הגדולים — לזכור: <b>תימן=נשרים, עיראק=עזרא ונחמיה</b></figcaption>
+    </figure>
+    <div class="mnem"><b>טריק זיכרון:</b> <b>ת</b>ימן עפה <b>על כנפי נשרים</b> (כמו הפסוק "ואשא אתכם על כנפי נשרים") ·
+      <b>עי</b>ראק → <b>עז</b>רא ונחמיה (שניהם חזרו מ<b>בבל=עיראק</b> בתנ"ך!).</div>
+
+    <h3>מדיניות "כור ההיתוך" <span class="chip">"מהי מדיניות כור ההיתוך?" – נשאל ישירות</span></h3>
+    <figure class="fig">
+      <svg viewBox="0 0 560 230" width="100%" style="max-width:520px" role="img" aria-label="כור ההיתוך">
+        <g font-size="12.5" text-anchor="middle">
+          <rect x="20"  y="20" width="120" height="34" rx="8" fill="#e3f0fc" stroke="#90caf9"/><text x="80" y="42">עולי אירופה</text>
+          <rect x="20"  y="64" width="120" height="34" rx="8" fill="#fbf3df" stroke="#e0c060"/><text x="80" y="86">עולי תימן</text>
+          <rect x="20" y="108" width="120" height="34" rx="8" fill="#e6f4e7" stroke="#81c784"/><text x="80" y="130">עולי עיראק</text>
+          <rect x="20" y="152" width="120" height="34" rx="8" fill="#f4e9f8" stroke="#ce93d8"/><text x="80" y="174">עולי צפון אפריקה</text>
+        </g>
+        <!-- funnel -->
+        <path d="M200,30 L330,30 L290,150 L240,150 Z" fill="#d8a93f" opacity=".85"/>
+        <text x="265" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#3a2a00">כור<tspan x="265" dy="16">ההיתוך</tspan></text>
+        <rect x="400" y="70" width="130" height="60" rx="12" fill="#b8860b"/>
+        <text x="465" y="96" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">ה"צבר"</text>
+        <text x="465" y="116" text-anchor="middle" fill="#fff" font-size="11">ישראלי אחיד דובר עברית</text>
+        <g stroke="#8a6508" stroke-width="2.5" fill="none" marker-end="url(#ar6)">
+          <path d="M140,37 L205,55"/><path d="M140,81 L210,82"/><path d="M140,125 L210,110"/><path d="M140,169 L207,140"/>
+          <path d="M295,90 C350,90 350,95 398,98"/>
+        </g>
+        <defs><marker id="ar6" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+          <path d="M0,0 L7,3 L0,6 Z" fill="#8a6508"/></marker></defs>
+      </svg>
+      <figcaption>המדינה ביקשה "להתיך" את כל העדות לזהות ישראלית אחת — דמות ה"צבר"</figcaption>
+    </figure>
+    <ul>
+      <li><b>הגדרה:</b> מדיניות "מיזוג גלויות" שנועדה <b>להתיך את כל העולים מתרבויות שונות לזהות ישראלית אחידה אחת</b> —
+      דמות ה<b>"צבר"</b> (צעיר, חלוץ, עובד אדמה, לוחם, דובר עברית).</li>
+      <li><b>הרציונל:</b> ההנהגה (בן-גוריון) חששה ש"בליל" של קבוצות ושפות יפורר את הלכידות הלאומית.</li>
+      <li><b>שלילת הגלות:</b> דרישה לזנוח שפות ומסורות "גלותיות"; <b>צה"ל</b> שימש כלי מרכזי לעברות ולחינוך לערכי המדינה (כולל עברות שמות).</li>
+    </ul>
+
+    <h3>קליטת העלייה: המעברות והקשיים</h3>
+    <ul>
+      <li><b>המעברות:</b> מחנות מגורים זמניים (אוהלים/פחונים) שנועדו לקלוט את ההמונים. הקשיים: <b>צפיפות, עוני, אבטלה, תנאי תברואה קשים</b>, ותלות בסיוע המדינה.</li>
+      <li><b>"החינוך האחיד" ומשבר הדת:</b> במעברות נכפה חינוך אחיד שנטה לחילוניות → התנגדות עולי תימן וארצות האסלאם (טענות על מניעת לימוד תורה ואף <b>גזיזת פאות</b>).</li>
+      <li><b>ועדת פרומקין (1950):</b> ועדת חקירה שקבעה כי הייתה <b>פגיעה שיטתית בחינוך הדתי</b>; בעקבותיה הועברה האחריות לחינוך לגוף ממשלתי שאיפשר <b>בחירה</b> בין חינוך דתי לחילוני.</li>
+      <li><b>מאורעות ואדי סאליב (1959):</b> מחאת עולי צפון אפריקה בחיפה על <b>קיפוח ואפליה</b> — ביטוי לכישלון "כור ההיתוך" ולפער העדתי.</li>
+    </ul>
+    <div class="mnem"><b>הקשיים — "צעב"ת":</b> <b>צ</b>פיפות · <b>ע</b>וני ואבטלה · <b>ב</b>עיות תברואה/בריאות · <b>ת</b>סכול ופגיעה בזהות התרבותית-דתית.</div>
+
+    <h3>דה-קולוניזציה וגורל היהודים בארצות האסלאם</h3>
+    <ul>
+      <li><b>דה-קולוניזציה:</b> תהליך <b>שחרור המושבות</b> מהשלטון הקולוניאלי האירופי (בעיקר אחרי מלה"ע השנייה) וקבלת עצמאות.</li>
+      <li><b>גורמים:</b> היחלשות המעצמות האירופיות אחרי המלחמה · התחזקות תנועות לאומיות מקומיות · לחץ בין-לאומי (ארה"ב/ברה"מ/או"ם).</li>
+      <li><b>ההשפעה על היהודים:</b> עליית <b>לאומיות ערבית-מוסלמית</b> והזדהות עם הסכסוך נגד ישראל → היהודים נתפסו כ"זרים"/"ציונים"; גברו <b>רדיפות, פרעות והגבלות</b> → עזיבה/בריחה ועלייה לישראל.</li>
+    </ul>
+
+    <h3>שאלות סבירות + תשובות לדוגמה</h3>
+    <details><summary>מהי מדיניות "כור ההיתוך"? <span class="freq hi">נשאלה מילה במילה</span></summary>
+      <div class="ans"><b>תשובה:</b> "כור ההיתוך" (מיזוג גלויות) היא המדיניות שהנהיגה הנהגת המדינה בשנותיה הראשונות,
+      שמטרתה הייתה <b>למזג את כל העולים — מארצות ומתרבויות שונות — לזהות לאומית ישראלית אחת ואחידה</b>.
+      העולים נדרשו לזנוח את שפותיהם ומסורותיהם ה"גלותיות" ולאמץ את דמות ה<b>"צבר"</b> (עברית, חלוציות, עבודת אדמה).
+      ההנחה הייתה שריבוי תרבויות מסכן את הלכידות הלאומית של החברה הצעירה.</div>
+    </details>
+    <details><summary>הציגו שתי פעולות שנקטה המדינה בקליטת העלייה, והסבירו איזה קושי נוצר בעקבות כל אחת. <span class="freq hi">חוזרת מאוד</span></summary>
+      <div class="ans"><b>תשובה:</b>
+      <br><b>1. הקמת המעברות</b> — מחנות זמניים לקליטת ההמונים. <b>הקושי:</b> תנאי חיים קשים — צפיפות, עוני, אבטלה ותחלואה — שיצרו תסכול ותחושת זמניות ממושכת.
+      <br><b>2. מדיניות "כור ההיתוך" / חינוך אחיד</b> — ניסיון לעצב זהות ישראלית אחידה. <b>הקושי:</b> פגיעה בזהות התרבותית והדתית של העולים (במיוחד מארצות האסלאם), נתק בין-דורי ותחושת קיפוח — שהתפרצה במחאות כמו ואדי סאליב.</div>
+    </details>
+    <details><summary>הסבירו את ההשפעה של תהליך הדה-קולוניזציה על מצב היהודים בארצות האסלאם. <span class="freq hi">חוזרת מאוד</span></summary>
+      <div class="ans"><b>תשובה:</b> עם שחרור ארצות האסלאם מהשלטון הקולוניאלי התחזקה בהן <b>הלאומיות הערבית-מוסלמית</b>,
+      שהזדהתה עם המאבק נגד מדינת ישראל שזה עתה קמה. כתוצאה מכך <b>הורע מצב היהודים</b>: הם נתפסו כ"זרים" וכ"ציונים",
+      סבלו מ<b>רדיפות, אלימות, פרעות, חרמות והגבלות כלכליות ומשפטיות</b>. תחושת חוסר הביטחון הגוברת
+      הניעה רבים מהם <b>לעזוב ולעלות לישראל</b> במסגרת מבצעי העלייה.</div>
+    </details>
+    <details><summary>הציגו את שתי העמדות בוויכוח בהנהגה בנוגע למדיניות העלייה בשנות ה-50. <span class="freq mid">חוזרת</span></summary>
+      <div class="ans"><b>תשובה:</b>
+      <br><b>עמדה 1 — עלייה ללא הגבלה ("קיבוץ גלויות"):</b> חובה מוסרית וציונית להציל כל יהודי ולהביאו מיד, ללא תנאים — בראש ובראשונה בן-גוריון.
+      <br><b>עמדה 2 — עלייה מבוקרת/סלקטיבית:</b> יש לווסת את קצב העלייה לפי <b>יכולת הקליטה</b> הכלכלית של המדינה (דיור, תעסוקה, בריאות), כדי למנוע קריסה כלכלית ותנאי קליטה בלתי-אפשריים.</div>
+    </details>
+    <a class="top" href="#">↑ חזרה לראש העמוד</a>
+  </section>
+
+  <!-- ============ EXAM TECHNIQUE ============ -->
+  <section id="exam" class="tip">
+    <h2 style="color:var(--tip)">✍️ טכניקת מענה — איך להרוויח נקודות</h2>
+    <table class="verbs">
+      <tr><th>הפועל בשאלה</th><th>מה עליי לעשות</th></tr>
+      <tr><td>הציגו / ציינו</td><td>לכתוב עובדה/נתון בקצרה — בלי הסבר ארוך.</td></tr>
+      <tr><td>הסבירו</td><td>עובדה <b>+ פיתוח</b>: למה זה קרה / מה ההשפעה / איך זה קשור.</td></tr>
+      <tr><td>בססו על המקור</td><td>חובה <b>לצטט או להפנות</b> לשורה/ביטוי בקטע — אחרת מורידים נקודות.</td></tr>
+      <tr><td>השוו / מהי המחלוקת</td><td>להציג <b>שני צדדים</b> במפורש ("מצד אחד… מצד שני…").</td></tr>
+    </table>
+    <ul>
+      <li>שאלה ששווה 17 נק' ומבקשת "שני גורמים" → תכתבו <b>שני</b> גורמים מלאים, לא אחד.</li>
+      <li>ענו <b>בדיוק על מה שנשאל</b> — לא "לשפוך" כל מה שאתם יודעים על הנושא.</li>
+      <li>חלקו את הזמן לפי הנקודות; אל תיתקעו על שאלה אחת.</li>
+      <li>שאלת מקור — קראו <b>קודם את השאלה</b>, ואז חפשו בקטע את מה שצריך.</li>
+    </ul>
+    <a class="top" href="#">↑ חזרה לראש העמוד</a>
+  </section>
+
+  <!-- ============ CHECKLIST ============ -->
+  <section id="check" class="tip">
+    <h2 style="color:var(--tip)">✅ צ׳ק־ליסט אחרון — ערב הבחינה</h2>
+    <table>
+      <tr><th>נושא</th><th>אני יודע/ת להסביר…</th></tr>
+      <tr><td>לאומיות</td><td>4 גורמים לצמיחתה (ה־ר־מ־ת) · מהי הצהרת בלפור וכיצד קידמה את הציונות</td></tr>
+      <tr><td>הקמת המדינה</td><td>3 דרכי המאבק בבריטים (מע"ה) · סעיפי החלוקה ותגובות · 3 קשיים בשלב א׳ · חשיבות צה"ל</td></tr>
+      <tr><td>עלייה וקליטה</td><td>מהי מדיניות כור ההיתוך · 2 מבצעי עלייה · קשיי המעברות · ועדת פרומקין · דה-קולוניזציה</td></tr>
+    </table>
+    <div class="callout"><b>זכרו:</b> הנושא של <b>כור ההיתוך / קליטת העלייה</b> הוא העדיפות מספר 1 — המורה הדגישה אותו. ודאו שאתם שולטים בו בעל-פה.</div>
+    <a class="top" href="#">↑ חזרה לראש העמוד</a>
+  </section>
+</main>
+
+<footer>
+  נבנה כעזר חזרה אישי · מבוסס על דפי המורה ועל ניתוח 9 בחינות בגרות (שאלון 22261, 2021–2025).<br>
+  בהצלחה בבחינה! 🍀
+</footer>
+</body>
+</html>
